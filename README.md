@@ -10,9 +10,7 @@ The portfolio highlights my background as a penetration tester, security researc
 https://nickportfolio-seven.vercel.app
 ```
 
-```md
 ![Portfolio Screenshot](screenshot.png)
-```
 
 ---
 
