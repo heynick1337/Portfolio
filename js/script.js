@@ -126,6 +126,42 @@ const barObs = new IntersectionObserver(entries=>{
 document.querySelectorAll('.skill-card').forEach(el=>barObs.observe(el));
 
 
+/* ── Certificate gallery filter ── */
+(function(){
+  const filters = document.querySelectorAll('.cgal-filter');
+  const cards   = document.querySelectorAll('.cert-card');
+
+  filters.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // update active state
+      filters.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const cat = btn.dataset.filter;
+      cards.forEach(card => {
+        const match = cat === 'all' || card.dataset.cat === cat;
+        // animate out/in
+        if(match){
+          card.style.display = '';
+          requestAnimationFrame(()=>{
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          });
+        } else {
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(12px)';
+          setTimeout(()=>{ if(card.dataset.cat !== btn.dataset.filter && btn.dataset.filter !== 'all') card.style.display='none'; }, 250);
+        }
+      });
+    });
+  });
+
+  // smooth transition on cards
+  cards.forEach(c=>{
+    c.style.transition = 'opacity .25s ease, transform .25s ease, border-color .25s, box-shadow .25s, transform .25s';
+  });
+})();
+
 const form = document.getElementById("cform");
 const status = document.getElementById("form-status");
 const btnText = form.querySelector("button span");
