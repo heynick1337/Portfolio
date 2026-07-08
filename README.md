@@ -7,7 +7,7 @@ The portfolio highlights my background as a penetration tester, security researc
 ## Preview
 
 ```
-https://nickportfolio-seven.vercel.app
+https://itsnickportfolio.vercel.app/
 ```
 
 ![Portfolio Screenshot](screenshot.png)
@@ -49,6 +49,12 @@ portfolio/
 ├── index.html
 ├── css/
 │   └── style.css
+├── cert/
+│   ├── Course Completion Certificate - Jetking.pdf
+│   ├── Internship Certificate of Achievement - Alancesec.pdf
+│   ├── Internship Completion Certificate - Samatrix.pdf
+│   ├── Internship Completion Certificate - Codevirus Security.pdf
+│   └── Certificate of Appreciation - Codevirus Security.pdf
 ├── js/
 │   └── script.js
 ├── resume/
