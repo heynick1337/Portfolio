@@ -183,7 +183,8 @@ ul{list-style:none}
 #about{background:var(--bg2)}
 #skills{background:var(--bg)}
 #experience{background:var(--bg2)}
-#achievements{background:var(--bg)}
+#disclosure{background:var(--bg2)}
+#research{background:var(--bg)}
 #certifications{background:var(--bg2)}
 #cert-gallery{background:var(--bg)}
 #projects{background:var(--bg2)}
@@ -705,3 +706,82 @@ footer{border-top:1px solid var(--border);background:var(--bg);padding:32px 0}
 
 /* ── REMOVE SKILL BARS from layout ── */
 .sk-bars { display: none; }
+
+
+/* ══ DISCLOSURE SECTION ══════════════════════════════════════════════════ */
+.disclosure-card{
+  display:grid;grid-template-columns:120px 1fr;gap:40px;
+  background:var(--card);border:1px solid rgba(251,113,133,.25);
+  border-radius:12px;padding:36px;
+  background:linear-gradient(135deg,rgba(251,113,133,.05) 0%,var(--card) 50%);
+}
+.disc-left{display:flex;flex-direction:column;align-items:center;gap:14px;padding-top:4px}
+.disc-icon{font-size:2.8rem;line-height:1}
+.disc-body{}
+.disc-company{
+  font-family:'JetBrains Mono',monospace;font-size:.72rem;
+  color:var(--accent);letter-spacing:.1em;text-transform:uppercase;
+  margin-bottom:6px;
+}
+.disc-title{
+  font-family:'Outfit',sans-serif;font-size:1.2rem;font-weight:600;
+  color:var(--text);letter-spacing:-.02em;line-height:1.3;
+  margin-bottom:14px;
+}
+.disc-desc{
+  font-size:.9rem;color:var(--sub);line-height:1.8;
+  margin-bottom:20px;
+}
+.disc-meta{
+  display:grid;grid-template-columns:1fr 1fr;gap:10px 24px;
+  padding-top:18px;border-top:1px solid rgba(255,255,255,.05);
+}
+.disc-meta-row{display:flex;flex-direction:column;gap:3px}
+.disc-meta-key{
+  font-family:'JetBrains Mono',monospace;font-size:.6rem;
+  color:var(--muted);letter-spacing:.12em;text-transform:uppercase;
+}
+.disc-meta-val{font-size:.83rem;color:var(--sub)}
+@media(max-width:640px){
+  .disclosure-card{grid-template-columns:1fr;gap:20px}
+  .disc-left{flex-direction:row;align-items:center}
+  .disc-meta{grid-template-columns:1fr}
+}
+
+/* ══ RESEARCH & PATENTS SECTION ══════════════════════════════════════════ */
+.research-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:16px;
+}
+.research-card{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:12px;padding:30px 28px;
+  transition:border-color .25s,transform .25s;
+}
+.research-card:hover{border-color:var(--border2);transform:translateY(-3px)}
+.research-card-top{margin-bottom:16px}
+.research-type-badge{
+  font-family:'JetBrains Mono',monospace;font-size:.62rem;
+  letter-spacing:.1em;text-transform:uppercase;
+  padding:4px 12px;border-radius:40px;
+}
+.research-title{
+  font-family:'Outfit',sans-serif;font-size:1.02rem;font-weight:600;
+  color:var(--text);letter-spacing:-.02em;line-height:1.35;
+  margin-bottom:12px;
+}
+.research-desc{
+  font-size:.85rem;color:var(--sub);line-height:1.75;
+  margin-bottom:18px;
+}
+.research-meta{
+  display:flex;flex-direction:column;gap:7px;
+  padding-top:16px;border-top:1px solid rgba(255,255,255,.05);
+}
+.research-meta-row{display:flex;gap:12px;font-size:.82rem}
+.research-meta-key{
+  font-family:'JetBrains Mono',monospace;font-size:.62rem;
+  color:var(--muted);letter-spacing:.08em;text-transform:uppercase;
+  min-width:110px;flex-shrink:0;padding-top:2px;
+}
+.research-meta-val{color:var(--sub)}
+@media(max-width:640px){.research-grid{grid-template-columns:1fr}}
