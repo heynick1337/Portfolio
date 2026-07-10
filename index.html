@@ -20,8 +20,9 @@
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
-      <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#disclosure">Disclosure</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#certifications">Certifications</a></li>
       <li><a href="#cert-gallery">Gallery</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -34,14 +35,15 @@
 </nav>
 <div class="mob-menu" id="mob">
   <ul>
-    <li><a href="#about"        onclick="closeMenu()">About</a></li>
-    <li><a href="#skills"       onclick="closeMenu()">Skills</a></li>
-    <li><a href="#experience"   onclick="closeMenu()">Experience</a></li>
-    <li><a href="#achievements"  onclick="closeMenu()">Achievements</a></li>
+    <li><a href="#about"          onclick="closeMenu()">About</a></li>
+    <li><a href="#skills"         onclick="closeMenu()">Skills</a></li>
+    <li><a href="#experience"     onclick="closeMenu()">Experience</a></li>
+    <li><a href="#disclosure"     onclick="closeMenu()">Disclosure</a></li>
+    <li><a href="#research"       onclick="closeMenu()">Research</a></li>
     <li><a href="#certifications" onclick="closeMenu()">Certifications</a></li>
-    <li><a href="#cert-gallery"  onclick="closeMenu()">Cert Gallery</a></li>
-    <li><a href="#projects"      onclick="closeMenu()">Projects</a></li>
-    <li><a href="#contact"      onclick="closeMenu()">Contact</a></li>
+    <li><a href="#cert-gallery"   onclick="closeMenu()">Gallery</a></li>
+    <li><a href="#projects"       onclick="closeMenu()">Projects</a></li>
+    <li><a href="#contact"        onclick="closeMenu()">Contact</a></li>
   </ul>
 </div>
 
@@ -73,7 +75,7 @@
           Get in touch
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </button>
-        <a href="resume/Nikhil_Sahu_Resume.pdf" target="_blank" class="btn-ghost">
+        <a href="/resume/Nikhil_Sahu_Resume.pdf" target="_blank" class="btn-ghost">
           Download Resume
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         </a>
@@ -319,54 +321,68 @@
   </div>
 </section>
 
-<!-- ACHIEVEMENTS -->
-<section id="achievements" class="section">
+<!-- RESPONSIBLE DISCLOSURE -->
+<section id="disclosure" class="section">
   <div class="wrap">
     <div class="sec-head r">
-      <div class="sec-eyebrow">achievements</div>
-      <h2 class="sec-title">Recognition &amp; Research</h2>
+      <div class="sec-eyebrow">responsible disclosure</div>
+      <h2 class="sec-title">Security Disclosure</h2>
+      <p class="sec-sub">Vulnerability identified and reported through responsible disclosure — reviewed, acknowledged, and patched by the vendor.</p>
     </div>
-    <div class="ach-grid">
-
-      <div class="ach-card star r d1">
-        <div class="ach-top">
-          <span class="ach-icon">🔐</span>
-          <span class="ach-badge ab-red">Credited &amp; Patched</span>
+    <div class="disclosure-card r">
+      <div class="disc-left">
+        <div class="disc-icon">🔐</div>
+        <span class="exp-badge badge-new">Acknowledged &amp; Patched</span>
+      </div>
+      <div class="disc-body">
+        <div class="disc-company">Quick Heal Technologies Ltd.</div>
+        <div class="disc-title">Brute Force Vulnerability — Product Key Validation</div>
+        <p class="disc-desc">Identified a brute force vulnerability in Quick Heal's product key validation system and reported it through responsible disclosure. The vulnerability was reviewed, acknowledged, and patched by their security team.</p>
+        <div class="disc-meta">
+          <div class="disc-meta-row"><span class="disc-meta-key">Vulnerability Type</span><span class="disc-meta-val">Brute Force</span></div>
+          <div class="disc-meta-row"><span class="disc-meta-key">Target</span><span class="disc-meta-val">Product Key Validation System</span></div>
+          <div class="disc-meta-row"><span class="disc-meta-key">Disclosure Method</span><span class="disc-meta-val">Responsible Disclosure</span></div>
+          <div class="disc-meta-row"><span class="disc-meta-key">Vendor Response</span><span class="disc-meta-val">Acknowledged and patched</span></div>
         </div>
-        <div class="ach-title">Responsible Disclosure — Quick Heal Technologies</div>
-        <p class="ach-desc">Identified a brute force vulnerability in Quick Heal's product key validation system and reported it through responsible disclosure. The vulnerability was reviewed, acknowledged, and patched by the Quick Heal security team.</p>
-        <div class="ach-detail">
-          <div class="ach-detail-row"><span class="ach-detail-key">Type</span><span class="ach-detail-val">Brute Force — Product Key Validation</span></div>
-          <div class="ach-detail-row"><span class="ach-detail-key">Company</span><span class="ach-detail-val">Quick Heal Technologies Ltd.</span></div>
-          <div class="ach-detail-row"><span class="ach-detail-key">Outcome</span><span class="ach-detail-val">Acknowledged and patched</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH & PATENTS -->
+<section id="research" class="section">
+  <div class="wrap">
+    <div class="sec-head r">
+      <div class="sec-eyebrow">research &amp; patents</div>
+      <h2 class="sec-title">Research &amp; Patents</h2>
+      <p class="sec-sub">Original academic research and intellectual property filed at SAGE University Indore.</p>
+    </div>
+    <div class="research-grid">
+
+      <div class="research-card r d1">
+        <div class="research-card-top">
+          <span class="research-type-badge ab-blue">Published Research</span>
+        </div>
+        <div class="research-title">Adaptive AI-Based Zero-Day Malware Detection and Neutralization Device</div>
+        <p class="research-desc">Co-developed an AI-driven cybersecurity framework for real-time zero-day malware detection, autonomous threat response, and adaptive protection across enterprise and IoT environments.</p>
+        <div class="research-meta">
+          <div class="research-meta-row"><span class="research-meta-key">Institution</span><span class="research-meta-val">SAGE University Indore</span></div>
+          <div class="research-meta-row"><span class="research-meta-key">Date</span><span class="research-meta-val">February 2026</span></div>
+          <div class="research-meta-row"><span class="research-meta-key">Type</span><span class="research-meta-val">Research Paper / Framework</span></div>
         </div>
       </div>
 
-      <div class="ach-card r d2">
-        <div class="ach-top">
-          <span class="ach-icon">📄</span>
-          <span class="ach-badge ab-blue">Published</span>
+      <div class="research-card r d2">
+        <div class="research-card-top">
+          <span class="research-type-badge ab-green">Indian Patent</span>
         </div>
-        <div class="ach-title">AI-Based Zero-Day Malware Detection</div>
-        <p class="ach-desc">Co-developed an AI-driven cybersecurity framework for real-time zero-day malware detection. Research conducted at SAGE University Indore, February 2026.</p>
-      </div>
-
-      <div class="ach-card r d3">
-        <div class="ach-top">
-          <span class="ach-icon">🏛️</span>
-          <span class="ach-badge ab-green">Patent Granted</span>
+        <div class="research-title">System and Method for AI-Based Community Weather Forecasting</div>
+        <p class="research-desc">Developed an AI-based localized weather forecasting system using machine learning algorithms. Filed and published through the Indian Patent Office.</p>
+        <div class="research-meta">
+          <div class="research-meta-row"><span class="research-meta-key">Institution</span><span class="research-meta-val">SAGE University Indore</span></div>
+          <div class="research-meta-row"><span class="research-meta-key">Filed &amp; Published</span><span class="research-meta-val">February 2025</span></div>
+          <div class="research-meta-row"><span class="research-meta-key">Type</span><span class="research-meta-val">Indian Patent</span></div>
         </div>
-        <div class="ach-title">Indian Patent Holder</div>
-        <p class="ach-desc">Holds an Indian Patent for a System and Method for AI-Based Community Weather Forecasting, developed using machine learning algorithms. Filed and published through the Indian Patent Office, February 2025.</p>
-      </div>
-
-      <div class="ach-card r d4">
-        <div class="ach-top">
-          <span class="ach-icon">🎯</span>
-          <span class="ach-badge ab-amber">10+ Programs</span>
-        </div>
-        <div class="ach-title">HackerOne Bug Bounty Hunter</div>
-        <p class="ach-desc">3+ years of active bug bounty hunting across 10+ HackerOne programs. Consistently identifying real vulnerabilities in live production systems — authentication flaws, IDOR, business logic errors, and more.</p>
       </div>
 
     </div>
@@ -435,6 +451,20 @@
         </div>
       </div>
 
+
+      <div class="exp-item r">
+        <div>
+          <div class="exp-period">Jul 2026</div>
+          <div class="exp-company">Codevirus Security</div>
+          <span class="exp-badge badge-new">Awarded</span>
+        </div>
+        <div>
+          <div class="exp-role">Certificate of Appreciation</div>
+          <p class="exp-desc">Awarded in recognition of dedication, hard work, and valuable contributions during the 6-month Cyber Security Internship at Codevirus Security.</p>
+          <div class="exp-tags"><span class="etag">Cert ID: CVS/INT/2026/003</span><span class="etag">Codevirus Security</span></div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -474,7 +504,7 @@
             <span>certificate pending link</span>
           </div>
           <!-- Clickable overlay — set href to your local certificate path -->
-          <a href="cert/Course Completion Certificate - Jetking.pdf" target="_blank" class="cert-preview-link" title="View certificate">
+          <a href="/cert/Course Completion Certificate - Jetking.pdf" target="_blank" class="cert-preview-link" title="View certificate">
             <span class="cert-preview-link-icon">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
             </span>
@@ -506,7 +536,7 @@
             </svg>
             <span>certificate pending link</span>
           </div>
-          <a href="cert/Internship Certificate of Achievement - Alancesec.pdf" target="_blank" class="cert-preview-link" title="View certificate">
+          <a href="/cert/Internship Certificate of Achievement - Alancesec.pdf" target="_blank" class="cert-preview-link" title="View certificate">
             <span class="cert-preview-link-icon">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
             </span>
@@ -538,7 +568,7 @@
             </svg>
             <span>certificate pending link</span>
           </div>
-          <a href="cert/Internship Completion Certificate - Samatrix.pdf" target="_blank" class="cert-preview-link" title="View certificate">
+          <a href="/cert/Internship Completion Certificate - Samatrix.pdf" target="_blank" class="cert-preview-link" title="View certificate">
             <span class="cert-preview-link-icon">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
             </span>
@@ -569,7 +599,7 @@
             </svg>
             <span>certificate pending link</span>
           </div>
-          <a href="cert/Internship Completion Certificate - Codevirus Security.pdf" target="_blank" class="cert-preview-link" title="View certificate">
+          <a href="/cert/Internship Completion Certificate - Codevirus Security.pdf" target="_blank" class="cert-preview-link" title="View certificate">
             <span class="cert-preview-link-icon">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
             </span>
@@ -590,14 +620,38 @@
       </div>
 
       <!-- ─── ADD MORE CARDS BELOW ────────────────────────────────────── -->
-      <!--
-        Copy any card block above and:
-          1. Set data-cat to: "security" | "internship" | "research" | "training"
-          2. Set href on .cert-preview-link, .cert-btn-view, .cert-btn-dl
-             to your local certificate path, e.g.: certificates/my-cert.pdf
-          3. Update name, issuer, date, cert-id text
-          4. Update the badge class: ab-green | ab-blue | ab-amber | ab-red | badge-new | badge-old
-      -->
+
+      <!-- ─── CARD 5 ─────────────────────────────────────────────────── -->
+      <div class="cert-card r d2" data-cat="internship">
+        <div class="cert-preview">
+          <div class="cert-preview-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="9" y1="13" x2="15" y2="13"/>
+              <line x1="9" y1="17" x2="12" y2="17"/>
+            </svg>
+            <span>certificate pending link</span>
+          </div>
+          <a href="#" target="_blank" class="cert-preview-link" title="View certificate">
+            <span class="cert-preview-link-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </span>
+          </a>
+          <span class="cert-preview-badge ab-green">Awarded</span>
+        </div>
+        <div class="cert-body">
+          <div class="cert-name">Certificate of Appreciation</div>
+          <div class="cert-issuer">Codevirus Security</div>
+          <div class="cert-meta">
+            <span class="cert-date">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Jul 2026
+            </span>
+            <span class="cert-id">ID: CVS/INT/2026/003</span>
+          </div>
+        </div>
+      </div>
 
     </div><!-- end #cgal-grid -->
   </div>
